@@ -28,6 +28,7 @@ public class MainFragment extends Fragment{
                 getActivity().getSupportFragmentManager()
                         .beginTransaction()
                         .replace(R.id.contentMainFragment,new RegisterFragment())
+                        .addToBackStack(null)
                         .commit();
 
             }
